@@ -177,7 +177,37 @@ var layer = {
       fixed: false,
       maxWidth: 210
     }, options));
-  }
+  },
+
+  success: function (content, options, end) {
+      if(typeof content === 'function'){
+          end = content;
+          content = null;
+          options = null;
+      }
+      if(typeof options === 'function'){
+          end = options;
+          options = null;
+      }
+      if(options){
+          this.msg((content || '操作成功 .'), options, end)
+      }else{
+          this.msg('<i class="layui-icon layui-icon-ok" style="color: #FFF;font-size:18px;font-weight:bolder"></i>&nbsp;&nbsp;'+(content || '操作成功'), options, end)
+      }
+  },
+
+  error: function (content, options, end) {
+      if(typeof options === 'function'){
+          end = content;
+          content = null;
+          options = null;
+      }
+      if(typeof options === 'function'){
+          end = options;
+          options = null;
+      }
+      layer.msg(content || '操作失败 !',$.extend({icon:5},options),end);
+  },
 };
 
 var Class = function(setings){  
