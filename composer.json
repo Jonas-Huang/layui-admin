@@ -1,6 +1,7 @@
 {
     "name": "jonas-huang/layui-admin",
     "description": "layui admin",
+    "version": "1.0.1",
     "type": "project",
     "license": "MIT",
     "authors": [
