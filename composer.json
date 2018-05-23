@@ -1,0 +1,14 @@
+{
+    "name": "jonas-huang/layui-admin",
+    "description": "layui admin",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+	{
+	    "name": "jonas-huang",
+	    "email": "1390580968@qq.com"
+	}
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
